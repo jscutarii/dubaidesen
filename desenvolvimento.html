@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<style class="css">  {margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(5, 73, 20, 0.8);
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #f4c542;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url("imagens/dubai2025.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.hero .overlay {
+  background: rgba(123, 4, 4, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Conteúdo */
+.content {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Galeria */
+.galeria {
+  padding: 80px 50px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.galeria h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0;
+  font-size: 22px;
+}
+
+.card p {
+  font-size: 16px;
+  padding: 0 15px 20px;
+  color: #555;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+  margin-top: 40px;</style>}
+   
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvimento de Dubai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">Dubai Evolution</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#historia">História</a>
+      <a href="#galeria">Galeria</a>
+    </nav>
+  </header>
+
+  <!-- Seção inicial -->
+  <section id="inicio" class="hero">
+    <div class="overlay">
+      <h1>A Transformação de Dubai</h1>
+      <p>De uma pequena vila no deserto a uma metrópole global.</p>
+    </div>
+  </section>
+
+  <!-- Seção história -->
+  <section id="historia" class="content">
+    <h2>O Desenvolvimento de Dubai</h2>
+    <p>
+     O desenvolvimento de Dubai é notável, transformando o que era um pequeno povoado no deserto, a um centro global de luxo. O governo tem um papel fundamental nesse processo, com iniciativas estratégicas e políticas públicas que promovem o desenvolvimento tecnológico.
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="galeria">
+    <h2>Dubai ao longo do tempo</h2>
+    <div class="cards">
+      <div class="card">
+     <img src="https://traveltodubaiblog.com/wp-content/uploads/2023/05/Dubai-Creek-1024x698.jpg " alt="">
+        <h3>1900</h3>
+        <p>Era apenas uma vila de pescadores, com comércio marítimo e vilas no deserto.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bannister.org/coasters/trips/2010/1010dubai.jpg " alt="Dubai 2010">
+        <h3>2010</h3>
+        <p>A expansão urbana acelerada e os primeiros grandes arranha-céus.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.luxurylifestylemag.co.uk/wp-content/uploads/2024/12/bigstock-The-beauty-of-Dubai-marina-jus-70572613.jpg " alt="Dubai 2025">
+        <h3>2025</h3>
+        <p>Uma metrópole futurista, referência em inovação e turismo global.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Dubai Evolution</p>
+  </footer>
+</body>
